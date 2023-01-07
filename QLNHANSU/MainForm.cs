@@ -39,6 +39,20 @@ namespace QLNHANSU
         NHANVIEN _nhanvien;
 
         HOPDONGLAODONG _hopdong;
+        
+        void loadSinhNhat()
+        {
+            lstSinhNhat.DataSource = _nhanvien.getSinhNhat();
+            lstSinhNhat.DisplayMember = "HOTEN";
+            lstSinhNhat.ValueMember = "MANV" ;
+        }
+        void loadTangLuong()
+        {
+            lstTangLuong.DataSource = _hopdong.getTangLuong();
+            lstTangLuong.DisplayMember = "HOTEN";
+            lstTangLuong.ValueMember = "MANV";
+        }
+
         private void MainForm_Load(object sender, EventArgs e)
         {
             _nhanvien = new NHANVIEN();
@@ -71,23 +85,83 @@ namespace QLNHANSU
 
             }
         }
-        void loadSinhNhat()
-        {
-            lstSinhNhat.DataSource = _nhanvien.getSinhNhat();
-            lstSinhNhat.DisplayMember = "HOTEN";
-            lstSinhNhat.ValueMember = "MANV" ;
-        }
-        void loadTangLuong()
-        {
-            lstTangLuong.DataSource = _hopdong.getTangLuong();
-            lstTangLuong.DisplayMember = "HOTEN";
-            lstTangLuong.ValueMember = "MANV";
-        }
+        
       
         public event EventHandler DangXuat;
 
         
+         private void btnDanToc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmDanToc));
+        }
 
+        private void btnTonGiao_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmTonGiao));
+        }
+        private void btnTrinhDo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmTrinhDo));
+        }
+
+        private void btnPhongBan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmPhongBan));
+        }
+
+        private void btnCongTy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmCongTy));
+        }
+
+        private void btnBoPhan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmBoPhan));
+        }
+
+        private void btnChucVu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmChucVu));
+        }
+
+        private void btnNhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmNhanVien));
+        }
+
+        private void btnHopDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmHopDongLaoDong));
+        }
+        private void btnBaoHiem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmBaoHiem));
+        }
+
+        private void btnKhenThuong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmKhenThuong));
+        }
+
+        private void btnKyLuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmKyLuat));
+        }
+
+        private void btnDieuChuyen_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmDieuChuyen));
+        }
+
+        private void btnThoiViec_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmThoiViec));
+        }
+
+        private void btnNangLuong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmQuanLyLuong));
+        }
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (isThoat)

@@ -205,9 +205,17 @@ namespace QLNHANSU
             this.btnHopDong.Name = "btnHopDong";
             this.btnHopDong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnHopDong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHopDong_ItemClick);
+                        // 
+            // btnSaoLuu
+            // 
+            this.btnSaoLuu.Caption = "Sao lưu dữ liệu";
+            this.btnSaoLuu.Id = 17;
+            this.btnSaoLuu.Name = "btnSaoLuu";
+            this.btnSaoLuu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // btnKhenThuong
             // 
+
             this.btnKhenThuong.Caption = "Khen thưởng";
             this.btnKhenThuong.Id = 6;
             this.btnKhenThuong.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_khen_thưởng;
@@ -263,6 +271,7 @@ namespace QLNHANSU
             // 
             // btnUngLuong
             // 
+            //----------------->>>>> form cu
             this.btnUngLuong.Caption = "Ứng lương";
             this.btnUngLuong.Id = 13;
             this.btnUngLuong.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_ứng_lương;
@@ -303,13 +312,7 @@ namespace QLNHANSU
             this.btnDoiMK.Id = 16;
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            // 
-            // btnSaoLuu
-            // 
-            this.btnSaoLuu.Caption = "Sao lưu dữ liệu";
-            this.btnSaoLuu.Id = 17;
-            this.btnSaoLuu.Name = "btnSaoLuu";
-            this.btnSaoLuu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+
             // 
             // btnPhucHoi
             // 
