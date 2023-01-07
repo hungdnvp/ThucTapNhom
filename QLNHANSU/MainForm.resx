@@ -8,9 +8,11 @@
     The primary goals of this format is to allow a simple XML format 
     that is mostly human readable. The generation and parsing of the 
     various data types are done through the TypeConverter classes 
-    associated with the data types
+    associated with the data types.
+    
     Example:
-    ... ado.net/XML headers & sche ...
+    
+    ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
     <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
@@ -26,7 +28,7 @@
     </data>
                 
     There are any number of "resheader" rows that contain simple 
-    name/valueairs.
+    name/value pairs.
     
     Each data row contains a name, and value. The row also contains a 
     type or mimetype. Type corresponds to a .NET class that support 

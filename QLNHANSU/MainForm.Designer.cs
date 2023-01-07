@@ -1,4 +1,4 @@
-﻿
+
 namespace QLNHANSU
 {
     partial class MainForm
@@ -117,6 +117,14 @@ namespace QLNHANSU
             this.ribbonControl1.SearchEditItem,
             this.btnDanToc,
             this.btnTonGiao,
+            this.btnTrinhDo,
+            this.btnPhongBan,
+            this.btnHopDong,
+            this.btnKhenThuong,
+            this.btnDieuChuyen,
+            this.btnThoiViec,
+            this.btnLoaiCa,
+            this.btnLoaiCong,
             this.btnPhuCap,
             this.btnTangCa,
             this.btnUngLuong,
@@ -130,14 +138,6 @@ namespace QLNHANSU
             this.btnBoPhan,
             this.btnChucVu,
             this.btnKyLuat,
-            this.btnTrinhDo,
-            this.btnPhongBan,
-            this.btnHopDong,
-            this.btnKhenThuong,
-            this.btnDieuChuyen,
-            this.btnThoiViec,
-            this.btnLoaiCa,
-            this.btnLoaiCong,
             this.btnNangLuong,
             this.btnBangCongCT,
             this.btnCaiDat,
@@ -205,8 +205,17 @@ namespace QLNHANSU
             this.btnHopDong.Name = "btnHopDong";
             this.btnHopDong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnHopDong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHopDong_ItemClick);
-                        // 
-            // btnS
+            // 
+            // btnKhenThuong
+            // 
+            this.btnKhenThuong.Caption = "Khen thưởng";
+            this.btnKhenThuong.Id = 6;
+            this.btnKhenThuong.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_khen_thưởng;
+            this.btnKhenThuong.Name = "btnKhenThuong";
+            this.btnKhenThuong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnKhenThuong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKhenThuong_ItemClick);
+            // 
+            // btnDieuChuyen
             // 
             this.btnDieuChuyen.Caption = "Điều chuyển";
             this.btnDieuChuyen.Id = 7;
@@ -241,7 +250,15 @@ namespace QLNHANSU
             this.btnLoaiCong.Name = "btnLoaiCong";
             this.btnLoaiCong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnLoaiCong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLoaiCong_ItemClick);
-            
+            // 
+            // btnPhuCap
+            // 
+            this.btnPhuCap.Caption = "Phụ cấp";
+            this.btnPhuCap.Id = 11;
+            this.btnPhuCap.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_phụ_cấp;
+            this.btnPhuCap.Name = "btnPhuCap";
+            this.btnPhuCap.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnPhuCap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhuCap_ItemClick);
             // 
             // btnTangCa
             // 
@@ -254,22 +271,12 @@ namespace QLNHANSU
             // 
             // btnUngLuong
             // 
-            //----------------->>>>> form cu
             this.btnUngLuong.Caption = "Ứng lương";
             this.btnUngLuong.Id = 13;
             this.btnUngLuong.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_ứng_lương;
             this.btnUngLuong.Name = "btnUngLuong";
             this.btnUngLuong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnUngLuong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUngLuong_ItemClick);
-            // 
-            // btnPhuCap
-            // 
-            this.btnPhuCap.Caption = "Phụ cấp";
-            this.btnPhuCap.Id = 11;
-            this.btnPhuCap.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_phụ_cấp;
-            this.btnPhuCap.Name = "btnPhuCap";
-            this.btnPhuCap.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnPhuCap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhuCap_ItemClick);
             // 
             // btnBangCong
             // 
@@ -295,7 +302,13 @@ namespace QLNHANSU
             this.btnDoiMK.Id = 16;
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-
+            // 
+            // btnSaoLuu
+            // 
+            this.btnSaoLuu.Caption = "Sao lưu dữ liệu";
+            this.btnSaoLuu.Id = 17;
+            this.btnSaoLuu.Name = "btnSaoLuu";
+            this.btnSaoLuu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // btnPhucHoi
             // 
@@ -368,13 +381,7 @@ namespace QLNHANSU
             this.btnBangCongCT.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBangCongCT_ItemClick);
             // 
             // btnCaiDat
-            // his.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.lstTangLuong = new DevExpress.XtraEditors.ListBoxControl();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.lstSinhNhat = new DevExpress.XtraEditors.ListBoxControl();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
+            // 
             this.btnCaiDat.Caption = "Quy định";
             this.btnCaiDat.Id = 27;
             this.btnCaiDat.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_quy_định;
@@ -456,7 +463,12 @@ namespace QLNHANSU
             // 
             // ribbonPageGroup1
             // 
-           
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnCaiDat, true);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnDangXuat, true);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Hệ thống";
+            // 
+            // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2,
@@ -556,7 +568,24 @@ namespace QLNHANSU
             this.dockPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(242, 200);
-         
+            this.dockPanel1.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Right;
+            this.dockPanel1.SavedIndex = 0;
+            this.dockPanel1.Size = new System.Drawing.Size(282, 698);
+            this.dockPanel1.Text = "Thông Báo";
+            this.dockPanel1.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
+            // 
+            // dockPanel1_Container
+            // 
+            this.dockPanel1_Container.Controls.Add(this.groupControl2);
+            this.dockPanel1_Container.Controls.Add(this.groupControl1);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(5, 57);
+            this.dockPanel1_Container.Margin = new System.Windows.Forms.Padding(4);
+            this.dockPanel1_Container.Name = "dockPanel1_Container";
+            this.dockPanel1_Container.Size = new System.Drawing.Size(274, 638);
+            this.dockPanel1_Container.TabIndex = 0;
+            // 
+            // groupControl2
+            // 
             this.groupControl2.Controls.Add(this.lstTangLuong);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl2.Location = new System.Drawing.Point(0, 272);
@@ -618,7 +647,21 @@ namespace QLNHANSU
             templatedItemElement3.FieldName = "HOTEN";
             templatedItemElement3.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
             templatedItemElement3.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-           
+            templatedItemElement3.Text = "HOTEN";
+            templatedItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            templatedItemElement4.AnchorElementIndex = 0;
+            templatedItemElement4.FieldName = "NGAYSINH";
+            templatedItemElement4.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            templatedItemElement4.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            templatedItemElement4.Text = "NGAYSINH";
+            templatedItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.TopLeft;
+            itemTemplateBase2.Elements.Add(templatedItemElement3);
+            itemTemplateBase2.Elements.Add(templatedItemElement4);
+            itemTemplateBase2.Name = "sinhnhat_nv";
+            tableRowDefinition2.Length.Type = DevExpress.XtraEditors.TableLayout.TableDefinitionLengthType.Pixel;
+            tableRowDefinition2.Length.Value = 42D;
+            itemTemplateBase2.Rows.Add(tableRowDefinition2);
+            this.lstSinhNhat.Templates.Add(itemTemplateBase2);
             this.lstSinhNhat.CustomizeItem += new DevExpress.XtraEditors.CustomizeTemplatedItemEventHandler(this.lstSinhNhat_CustomizeItem);
             // 
             // MainForm
