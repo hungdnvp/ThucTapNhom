@@ -21,11 +21,12 @@ namespace QLNHANSU
             InitializeComponent();
         }
         
+        // xu ly thao tac close , open switch giua cac form
         void openForm(Type typeform)
         {
             foreach(var frm in MdiChildren)
             {
-                if (frm.GetType() == typeform)
+                if (frm.GetType()==typeform)
                 {
                     frm.Activate();
                     return;
@@ -36,13 +37,14 @@ namespace QLNHANSU
             f.Show();
         }
         NHANVIEN _nhanvien;
+
         HOPDONGLAODONG _hopdong;
         private void MainForm_Load(object sender, EventArgs e)
         {
             _nhanvien = new NHANVIEN();
             _hopdong = new HOPDONGLAODONG();
-            ribbonControl1.SelectedPage = rbChamCong;
-            loadSinhNhat();
+            ribbonControl1.SelectedPage =rbChamCong;
+            loadSinhNhat(); 
             loadTangLuong();
             PhanQuyen();
         }
@@ -51,11 +53,13 @@ namespace QLNHANSU
             switch (Const.TaiKhoan.LoaiTaiKhoan)
             {
                 case TaiKhoan.LoaiTK.ketoan:
+
                     btnDanToc.Enabled = btnTonGiao.Enabled = btnTrinhDo.Enabled = btnCongTy.Enabled
                         = btnKhenThuong.Enabled = btnKyLuat.Enabled = btnDieuChuyen.Enabled 
                         = btnThoiViec.Enabled = btnHopDong.Enabled = btnLoaiCa.Enabled 
                         = btnLoaiCong.Enabled = btnPhuCap.Enabled = btnCaiDat.Enabled = false;
                     break;
+                    // nhan su khac dieu kien on off cac component
                 case TaiKhoan.LoaiTK.nhansu:
                     btnDanToc.Enabled = btnTonGiao.Enabled = btnTrinhDo.Enabled = btnCongTy.Enabled
                         = btnKhenThuong.Enabled = btnKyLuat.Enabled = btnDieuChuyen.Enabled
@@ -71,7 +75,7 @@ namespace QLNHANSU
         {
             lstSinhNhat.DataSource = _nhanvien.getSinhNhat();
             lstSinhNhat.DisplayMember = "HOTEN";
-            lstSinhNhat.ValueMember = "MANV";
+            lstSinhNhat.ValueMember = "MANV" ;
         }
         void loadTangLuong()
         {
@@ -82,16 +86,7 @@ namespace QLNHANSU
       
         public event EventHandler DangXuat;
 
-        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            DangXuat(this, new EventArgs());
-        }
-
-        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (isThoat)
-                Application.Exit();
-        }
+        
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -103,7 +98,26 @@ namespace QLNHANSU
             
 
         }
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DangXuat(this, new EventArgs());
+        }
 
+                private void lstSinhNhat_CustomizeItem(object sender, DevExpress.XtraEditors.CustomizeTemplatedItemEventArgs e)
+        {
+            if (e.TemplatedItem.Elements[1].Text.Substring(0, 2) == DateTime.Now.Day.ToString())
+            {
+                e.TemplatedItem.AppearanceItem.Normal.ForeColor = Color.Red;
+            }
+        }
+
+        private void lstTangLuong_CustomizeItem(object sender, DevExpress.XtraEditors.CustomizeTemplatedItemEventArgs e)
+        {
+            if (e.TemplatedItem.Elements[1].Text.Substring(0, 2) == DateTime.Now.Day.ToString())
+            {
+                e.TemplatedItem.AppearanceItem.Normal.ForeColor = Color.Red;
+            }
+        }
        
     }
 }

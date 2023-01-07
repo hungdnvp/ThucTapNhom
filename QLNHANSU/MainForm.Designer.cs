@@ -117,14 +117,6 @@ namespace QLNHANSU
             this.ribbonControl1.SearchEditItem,
             this.btnDanToc,
             this.btnTonGiao,
-            this.btnTrinhDo,
-            this.btnPhongBan,
-            this.btnHopDong,
-            this.btnKhenThuong,
-            this.btnDieuChuyen,
-            this.btnThoiViec,
-            this.btnLoaiCa,
-            this.btnLoaiCong,
             this.btnPhuCap,
             this.btnTangCa,
             this.btnUngLuong,
@@ -138,6 +130,14 @@ namespace QLNHANSU
             this.btnBoPhan,
             this.btnChucVu,
             this.btnKyLuat,
+            this.btnTrinhDo,
+            this.btnPhongBan,
+            this.btnHopDong,
+            this.btnKhenThuong,
+            this.btnDieuChuyen,
+            this.btnThoiViec,
+            this.btnLoaiCa,
+            this.btnLoaiCong,
             this.btnNangLuong,
             this.btnBangCongCT,
             this.btnCaiDat,
@@ -250,15 +250,7 @@ namespace QLNHANSU
             this.btnLoaiCong.Name = "btnLoaiCong";
             this.btnLoaiCong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnLoaiCong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLoaiCong_ItemClick);
-            // 
-            // btnPhuCap
-            // 
-            this.btnPhuCap.Caption = "Phụ cấp";
-            this.btnPhuCap.Id = 11;
-            this.btnPhuCap.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_phụ_cấp;
-            this.btnPhuCap.Name = "btnPhuCap";
-            this.btnPhuCap.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnPhuCap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhuCap_ItemClick);
+            
             // 
             // btnTangCa
             // 
@@ -277,6 +269,15 @@ namespace QLNHANSU
             this.btnUngLuong.Name = "btnUngLuong";
             this.btnUngLuong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.btnUngLuong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUngLuong_ItemClick);
+            // 
+            // btnPhuCap
+            // 
+            this.btnPhuCap.Caption = "Phụ cấp";
+            this.btnPhuCap.Id = 11;
+            this.btnPhuCap.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_phụ_cấp;
+            this.btnPhuCap.Name = "btnPhuCap";
+            this.btnPhuCap.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnPhuCap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhuCap_ItemClick);
             // 
             // btnBangCong
             // 
