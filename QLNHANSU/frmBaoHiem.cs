@@ -64,5 +64,45 @@ namespace QLNHANSU
             gcDanhSach.DataSource = _bh.getListFull(1);
             gvDanhSach.OptionsBehavior.Editable = false;
         }
+        void SaveData()
+        {
+            if (_them)
+            {
+                var maxSoQD = _bh.MaxSoQuyetDinh(1);
+                int so = int.Parse(maxSoQD.Substring(0, 5)) + 1;
+
+                tb_BAOHIEM bh = new tb_BAOHIEM();
+                bh.SOQUYETDINH = so.ToString("00000") + @"/QĐBH";
+                bh.NOICAP = txtLyDo.Text;
+                bh.NOIKHAMBENH = txtNoiDung.Text;
+                bh.NGAYCAP = dtNgay.Value;
+                bh.MANV = int.Parse(slkNhanVien.EditValue.ToString());
+                bh.LOAI = 1;
+                bh.CREATED_BY = 1;
+                bh.CREATED_DATE = DateTime.Now;
+                _bh.Add(bh);
+
+            }
+            else
+            {
+                var bh = _bh.getItem(_soQD);
+                bh.NOICAP = txtLyDo.Text;
+                bh.NOIKHAMBENH = txtNoiDung.Text;
+                bh.NGAYCAP = dtNgay.Value;
+                bh.MANV = int.Parse(slkNhanVien.EditValue.ToString());
+                bh.UPDATED_BY = 1;
+                bh.UPDATED_DATE = DateTime.Now;
+                _bh.Update(bh);
+
+            }
+
+
+        }
+        private void btnThem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            _them = true;
+            _showHide(false);
+            _reset();
+        }
     }
 }
