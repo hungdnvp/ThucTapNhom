@@ -508,6 +508,13 @@ namespace QLNHANSU
             // 
             // ribbonPageGroup3
             // 
+            //this.btnDangXuat.Caption = "Đăng xuất";
+            //this.btnDangXuat.Id = 33;
+            //this.btnDangXuat.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_đăng_xuất;
+            //this.btnDangXuat.Name = "btnDangXuat";
+            //this.btnDangXuat.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            //this.btnDangXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat_ItemClick);
+
             this.ribbonPageGroup3.ItemLinks.Add(this.btnHopDong, true);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnNangLuong, true);
             this.ribbonPageGroup3.ItemLinks.Add(this.btnKhenThuong, true);

@@ -474,7 +474,27 @@ namespace QLNHANSU
             this.bar3.OptionsBar.UseWholeRow = true;
             this.bar3.Text = "Status bar";
             // 
-            // barDockControlTop
+            //// barDockControlTop
+
+
+
+            //this.btnLuu.Caption = "Lưu";
+            //this.btnLuu.Id = 3;
+            //this.btnLuu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.ImageOptions.Image")));
+            //this.btnLuu.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnLuu.ImageOptions.LargeImage")));
+            //this.btnLuu.Name = "btnLuu";
+            //this.btnLuu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLuu_ItemClick);
+            //// 
+            //// btnHuy
+            //// 
+            //this.btnHuy.Caption = "Huỷ";
+            //this.btnHuy.Id = 5;
+            //this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuy.ImageOptions.SvgImage")));
+            //this.btnHuy.Name = "btnHuy";
+            //this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
+            //// 
+            //// btnIn
+            //// 
             // 
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;

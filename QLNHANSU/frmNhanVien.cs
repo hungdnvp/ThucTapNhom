@@ -159,6 +159,13 @@ namespace QLNHANSU
 
         }
 
+
+        //private void btnSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        //{
+        //    _them = false;
+        //    _showHide(false);
+        //}
+
         private void btnIn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             rptDanhSachNhanVien rpt = new rptDanhSachNhanVien(_lstNVDTO);
