@@ -133,6 +133,13 @@
             this.btnDangNhap.TabIndex = 14;
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+
+
+            //this.btnDangNhap.ShadowDecoration.Parent = this.btnDangNhap;
+            //this.btnDangNhap.Size = new System.Drawing.Size(496, 67);
+            //this.btnDangNhap.TabIndex = 14;
+            //this.btnDangNhap.Text = "Đăng Nhập";
+            //this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // label1
             // 

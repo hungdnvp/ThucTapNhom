@@ -461,6 +461,22 @@ namespace QLNHANSU
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "Hệ thống ";
             // 
+
+
+            //this.btnBaoHiem.Caption = "Bảo Hiểm";
+            //this.btnBaoHiem.Id = 36;
+            //this.btnBaoHiem.ImageOptions.Image = global::QLNHANSU.Properties.Resources.nút_bảo_hiểm;
+            //this.btnBaoHiem.Name = "btnBaoHiem";
+            //this.btnBaoHiem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            //this.btnBaoHiem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBaoHiem_ItemClick);
+            //// 
+            //// ribbonPage1
+            //// 
+            //this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            //this.ribbonPageGroup1});
+            //this.ribbonPage1.Name = "ribbonPage1";
+            //this.ribbonPage1.Text = "Hệ thống ";
+            //// 
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnCaiDat, true);

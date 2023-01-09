@@ -172,24 +172,6 @@
     <Compile Include="frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLyLuong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuanLyLuong.Designer.cs">
-      <DependentUpon>frmQuanLyLuong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmQuyDinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuyDinh.Designer.cs">
-      <DependentUpon>frmQuyDinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmThoiViec.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThoiViec.Designer.cs">
-      <DependentUpon>frmThoiViec.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,12 +183,6 @@
     </Compile>
     <Compile Include="frmTonGiao.Designer.cs">
       <DependentUpon>frmTonGiao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmTrinhDo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmTrinhDo.Designer.cs">
-      <DependentUpon>frmTrinhDo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmWaiting.cs">
       <SubType>Form</SubType>
@@ -344,23 +320,11 @@
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyLuong.resx">
-      <DependentUpon>frmQuanLyLuong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuyDinh.resx">
-      <DependentUpon>frmQuyDinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmThoiViec.resx">
-      <DependentUpon>frmThoiViec.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmPhongBan.resx">
       <DependentUpon>frmPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTonGiao.resx">
       <DependentUpon>frmTonGiao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTrinhDo.resx">
-      <DependentUpon>frmTrinhDo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmWaiting.resx">
       <DependentUpon>frmWaiting.cs</DependentUpon>
