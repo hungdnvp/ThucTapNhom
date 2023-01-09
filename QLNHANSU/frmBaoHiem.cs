@@ -20,6 +20,11 @@ namespace QLNHANSU
         {
             InitializeComponent();
         }
+        BAOHIEM _bh;
+        NHANVIEN _nhanvien;
+        bool _them;
+        string _soQD;
+
         private void frmBaoHiem_Load(object sender, EventArgs e)
         {
             _bh = new BAOHIEM();
@@ -55,8 +60,7 @@ namespace QLNHANSU
         }
         void loadNhanVien()
         {
-            
-            slkNhanVien.Properties = _nhanvien.getList();
+            slkNhanVien.Properties.DataSource = _nhanvien.getList();
             slkNhanVien.Properties.ValueMember = "MANV";
             slkNhanVien.Properties.DisplayMember = "HOTEN";
         }
@@ -64,6 +68,48 @@ namespace QLNHANSU
         {
             gcDanhSach.DataSource = _bh.getListFull(1);
             gvDanhSach.OptionsBehavior.Editable = false;
+        }
+
+        private void btnThem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            _them = true;
+            _showHide(false);
+            _reset();
+        }
+
+        private void btnSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            _them = false;
+            _showHide(false);
+        }
+
+        private void btnXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xoá chứ ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                _bh.Delete(_soQD);
+                loadData();
+            }
+        }
+
+        private void btnLuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            SaveData();
+            loadData();
+            _them = false;
+            _showHide(true);
+        }
+
+        private void btnHuy_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            _them = false;
+            _showHide(true);
+            _reset();
+        }
+
+        private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
         }
         void SaveData()
         {
@@ -90,7 +136,7 @@ namespace QLNHANSU
                 bh.NOICAP = txtLyDo.Text;
                 bh.NOIKHAMBENH = txtNoiDung.Text;
                 bh.NGAYCAP = dtNgay.Value;
-                bh.MANV = EditValue.ToString());
+                bh.MANV = int.Parse(slkNhanVien.EditValue.ToString());
                 bh.UPDATED_BY = 1;
                 bh.UPDATED_DATE = DateTime.Now;
                 _bh.Update(bh);
@@ -99,21 +145,20 @@ namespace QLNHANSU
 
 
         }
-        void SyLogBaoHiem(int id){
-            int maBH = 0;
-            var maxSoQD = _bh.MaxSoQuyetDinh(1);
-                int so = int.Parse(maxSoQD.Substring(0, 5)) + 1;
 
-                tb_BAOHIEM bh = new tb_BAOHIEM();
-                bh.SOQUYETDINH = so.ToString("00000") + @"/QĐBH";
-                bh.NOICAP = txtLyDo.Text;
-                bh.NOIKHAMBENH = txtNoiDung.Text;
-        }
-        private void btnThem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void gvDanhSach_Click(object sender, EventArgs e)
         {
-            _them = true;
-            _showHide(false);
-            _reset();
+            if (gvDanhSach.RowCount > 0)
+            {
+                _soQD = gvDanhSach.GetFocusedRowCellValue("SOQUYETDINH").ToString();
+                var kt = _bh.getItem(_soQD);
+                txtSoQD.Text = _soQD;
+                dtNgay.Value = kt.NGAYCAP.Value;
+                slkNhanVien.EditValue = kt.MANV;
+                txtNoiDung.Text = kt.NOIKHAMBENH;
+                txtLyDo.Text = kt.NOICAP;
+
+            }
         }
     }
 }
