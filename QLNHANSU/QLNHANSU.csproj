@@ -148,18 +148,6 @@
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDangNhap1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDangNhap1.Designer.cs">
-      <DependentUpon>frmDangNhap1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmDanToc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDanToc.Designer.cs">
-      <DependentUpon>frmDanToc.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmDieuChuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,12 +159,6 @@
     </Compile>
     <Compile Include="frmHopDongLaoDong.Designer.cs">
       <DependentUpon>frmHopDongLaoDong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmKhenThuong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmKhenThuong.Designer.cs">
-      <DependentUpon>frmKhenThuong.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKyLuat.cs">
       <SubType>Form</SubType>
@@ -350,20 +332,11 @@
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDangNhap1.resx">
-      <DependentUpon>frmDangNhap1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDanToc.resx">
-      <DependentUpon>frmDanToc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmDieuChuyen.resx">
       <DependentUpon>frmDieuChuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHopDongLaoDong.resx">
       <DependentUpon>frmHopDongLaoDong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmKhenThuong.resx">
-      <DependentUpon>frmKhenThuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKyLuat.resx">
       <DependentUpon>frmKyLuat.cs</DependentUpon>
@@ -446,6 +419,10 @@
       <DependentUpon>frmUngLuong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="frmBoPhan.resx.bak" />
+    <None Include="frmChucVu.resx.bak" />
+    <None Include="frmCongTy.resx.bak" />
+    <None Include="frmDieuChuyen.resx.bak" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
