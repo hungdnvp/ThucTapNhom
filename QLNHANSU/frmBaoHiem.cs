@@ -55,7 +55,8 @@ namespace QLNHANSU
         }
         void loadNhanVien()
         {
-            slkNhanVien.Properties.DataSource = _nhanvien.getList();
+            
+            slkNhanVien.Properties = _nhanvien.getList();
             slkNhanVien.Properties.ValueMember = "MANV";
             slkNhanVien.Properties.DisplayMember = "HOTEN";
         }
@@ -89,7 +90,7 @@ namespace QLNHANSU
                 bh.NOICAP = txtLyDo.Text;
                 bh.NOIKHAMBENH = txtNoiDung.Text;
                 bh.NGAYCAP = dtNgay.Value;
-                bh.MANV = int.Parse(slkNhanVien.EditValue.ToString());
+                bh.MANV = EditValue.ToString());
                 bh.UPDATED_BY = 1;
                 bh.UPDATED_DATE = DateTime.Now;
                 _bh.Update(bh);
@@ -97,6 +98,16 @@ namespace QLNHANSU
             }
 
 
+        }
+        void SyLogBaoHiem(int id){
+            int maBH = 0;
+            var maxSoQD = _bh.MaxSoQuyetDinh(1);
+                int so = int.Parse(maxSoQD.Substring(0, 5)) + 1;
+
+                tb_BAOHIEM bh = new tb_BAOHIEM();
+                bh.SOQUYETDINH = so.ToString("00000") + @"/QĐBH";
+                bh.NOICAP = txtLyDo.Text;
+                bh.NOIKHAMBENH = txtNoiDung.Text;
         }
         private void btnThem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
