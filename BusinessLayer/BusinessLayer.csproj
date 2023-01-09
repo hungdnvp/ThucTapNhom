@@ -48,25 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BANGCONG_NV_CT.cs" />
-    <Compile Include="BANGLUONG.cs" />
     <Compile Include="BAOHIEM.cs" />
     <Compile Include="BOPHAN.cs" />
     <Compile Include="CHUCVU.cs" />
     <Compile Include="CONGTY.cs" />
     <Compile Include="DANTOC.cs" />
-    <Compile Include="DTO\BAOHIEM_DTO.cs" />
     <Compile Include="DTO\DIEUCHUYEN_DTO.cs" />
-    <Compile Include="DTO\HOPDONG_DTO.cs" />
-    <Compile Include="DTO\KHENTHUONG_DTO.cs" />
-    <Compile Include="DTO\KYLUAT_DTO.cs" />
     <Compile Include="DTO\NANGLUONG_DTO.cs" />
     <Compile Include="DTO\NHANVIEN_DTO.cs" />
-    <Compile Include="DTO\NHANVIEN_PHUCAP_DTO.cs" />
-    <Compile Include="DTO\TANGCA_DTO.cs" />
     <Compile Include="DTO\THOIVIEC_DTO.cs" />
-    <Compile Include="DTO\UNGLUONG_DTO.cs" />
-    <Compile Include="HOPDONGLAODONG.cs" />
     <Compile Include="KHENTHUONG.cs" />
     <Compile Include="KYCONG.cs" />
     <Compile Include="KYCONGCHITIET.cs" />
@@ -79,15 +69,10 @@
     <Compile Include="NHANVIEN_NANGLUONG.cs" />
     <Compile Include="NHANVIEN_THOIVIEC.cs" />
     <Compile Include="PHONGBAN.cs" />
-    <Compile Include="PHUCAP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QUYDINH.cs" />
-    <Compile Include="SYS_CONFIG.cs" />
-    <Compile Include="SYS_USER.cs" />
     <Compile Include="TANGCA.cs" />
     <Compile Include="TONGIAO.cs" />
     <Compile Include="TRINHDO.cs" />
-    <Compile Include="UNGLUONG.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">

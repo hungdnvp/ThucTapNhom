@@ -307,6 +307,14 @@ namespace QLNHANSU
             this.barCheckItem1.Name = "barCheckItem1";
             // 
             // labelControl1
+
+            //// barDockControlTop
+            //// 
+            //this.barDockControlTop.CausesValidation = false;
+            //this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            //this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            //this.barDockControlTop.Manager = this.barManager1;
+            //this.barDockControlTop.Size = new System.Drawing.Size(842, 27);
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;

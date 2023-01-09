@@ -390,7 +390,27 @@ namespace QLNHANSU
             this.LYDO.VisibleIndex = 3;
             this.LYDO.Width = 292;
             // 
-            // MAPB
+            //// MAPB
+
+            //this.SOQUYETDINH.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            //this.SOQUYETDINH.AppearanceHeader.Options.UseFont = true;
+            //this.SOQUYETDINH.Caption = "SỐ QUYẾT ĐỊNH";
+            //this.SOQUYETDINH.FieldName = "SOQD";
+            //this.SOQUYETDINH.MaxWidth = 198;
+            //this.SOQUYETDINH.MinWidth = 198;
+            //this.SOQUYETDINH.Name = "SOQUYETDINH";
+            //this.SOQUYETDINH.Visible = true;
+            //this.SOQUYETDINH.VisibleIndex = 0;
+            //this.SOQUYETDINH.Width = 198;
+            //// 
+            //// IDNV
+            //// 
+            //this.IDNV.Caption = "IDNV";
+            //this.IDNV.FieldName = "IDNV";
+            //this.IDNV.MinWidth = 23;
+            //this.IDNV.Name = "IDNV";
+            //this.IDNV.Width = 87;
+            //// 
             // 
             this.MAPB.Caption = "MAPB";
             this.MAPB.FieldName = "MAPB";

@@ -424,6 +424,20 @@ namespace QLNHANSU
             this.MANV.Name = "MANV";
             this.MANV.Width = 467;
             // 
+
+            //this.THOIHAN.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            //this.THOIHAN.AppearanceHeader.Options.UseFont = true;
+            //this.THOIHAN.Caption = "THỜI HẠN";
+            //this.THOIHAN.FieldName = "THOIHAN";
+            //this.THOIHAN.MaxWidth = 175;
+            //this.THOIHAN.MinWidth = 175;
+            //this.THOIHAN.Name = "THOIHAN";
+            //this.THOIHAN.Width = 175;
+            //// 
+            //// LYDO
+            //// 
+            //this.LYDO.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            //this.LYDO.AppearanceHeader.Options.UseFont = true;
             // HOTEN
             // 
             this.HOTEN.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
